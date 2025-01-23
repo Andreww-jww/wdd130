@@ -30,9 +30,6 @@ article{
 }
 article img {
     float: right;
-    margin-left: 20px; /* Space between the image and the text */
-    width: 40%; /* Adjust size of the image */
-    border-radius: 8px; /* Optional: rounded corners for the image */
 }
 p{
     font-size: 1.2em;
