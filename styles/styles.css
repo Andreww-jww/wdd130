@@ -1,4 +1,9 @@
-:root{}
+:root{
+    --primary-color: #3D2600;
+    --secondary-color: #130b01;
+    --accent1-color: #3A1A03;
+    --accent2-color: #502201;
+}
 
 nav {
     background-color: darkblue;
