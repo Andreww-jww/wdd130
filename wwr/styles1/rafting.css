@@ -21,6 +21,19 @@ h1, h2 {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 20px;
 }
+h1{
+    position: absolute;
+}
+article{
+    position: absolute;
+    background-color: var(--bacground--color);
+}
+article img {
+    float: right;
+    margin-left: 20px; /* Space between the image and the text */
+    width: 40%; /* Adjust size of the image */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
 p{
     font-size: 1.2em;
     line-height: 1.5;
@@ -37,4 +50,9 @@ a:hover {
 }
 .sociallinks img {
     text-decoration: none;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
