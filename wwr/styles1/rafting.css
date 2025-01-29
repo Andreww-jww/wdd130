@@ -89,3 +89,21 @@ footer nav {
 footer nav img {
     margin: 0 10px;
 }
+header {
+    display: grid;
+    grid-template-columns: 2fr 4fr; /* Logo takes 2 parts, navigation takes 4 parts */
+    align-items: center; /* Align items vertically */
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    width: 200px; /* Ensures size */
+    display: block; /* Fixes inline behavior */
+}
+
+nav {
+    display: flex; /* Makes links align horizontally */
+    gap: 20px; /* Space between links */
+    justify-content: flex-end; /* Push links to the right */
+}
