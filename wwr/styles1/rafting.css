@@ -30,7 +30,7 @@ h1, h2 {
 
 .hero img {
     display: block;
-    width: 100%; 
+    width: 150%; 
     height: auto;
 }
 
@@ -73,47 +73,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.sociallinks img {
-    width: 32px;
-    height: 32px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--accent1-color);
-    color: var(--background-color);
-    padding: 10px;
-}
-
-footer nav {
-    display: flex;
-}
-
-footer nav img {
-    margin: 0 10px;
-}
-
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: #f8f8f8;
     padding: 10px;
 }
 
-.header-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 .logo {
     width: 200px;
-    display: flex;
-    justify-content: center;
 }
 
 nav {
@@ -126,4 +95,41 @@ nav a {
     text-decoration: none;
     color: var(--link-color);
     font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.gallery img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: var(--background-color);
+    padding: 10px;
+}
+
+footer nav {
+    display: flex;
+    gap: 10px;
+}
+
+footer nav img {
+    width: 32px;
+    height: 32px;
+}
+section.history h2 {
+    text-align: center;
 }
