@@ -82,6 +82,8 @@ header {
 }
 
 .logo {
+    display: flex;
+    justify-content: space-evenly;
     width: 200px;
 }
 
@@ -130,9 +132,61 @@ footer nav img {
     width: 32px;
     height: 32px;
 }
-section.history h2 {
+.history {
+    text-align: center; 
+}
+
+.history h2 {
+    text-align: center; 
+}
+
+.history-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+
+.history-container img {
+    max-width: 60%;  
+    height: 100;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.history-text {
+    flex: 2; 
+    text-align: justify;
+    margin-left: 20px; 
+    max-width: 55%;
+}
+
+
+head.title {
     text-align: center;
 }
-head.title {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: var(--background-color);
+}
+
+section.intro h1 {
+    text-align: center;
+}
+
+section.intro p {
+    text-align: center;
+}
+
+.bordered-text {
+    border: 1px solid black; 
+    padding: 3px; 
+}
+
+.adventures h2 {
     text-align: center;
 }
