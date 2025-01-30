@@ -31,30 +31,36 @@ h1, h2 {
 .hero img {
     display: block;
     width: 100%; 
-    max-width: 100%; 
     height: auto;
 }
 
 .hero h1 {
     position: relative;
+    margin-top: 20px;
 }
 
 article {
     background-color: var(--background-color);
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 article img {
     float: right;
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
+    margin-left: 20px;
+    border-radius: 5px;
 }
 
 p {
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 a {
@@ -71,6 +77,7 @@ a:hover {
     width: 32px;
     height: 32px;
     margin: 5px;
+    cursor: pointer;
 }
 
 footer {
@@ -89,21 +96,34 @@ footer nav {
 footer nav img {
     margin: 0 10px;
 }
+
 header {
-    display: grid;
-    grid-template-columns: 2fr 4fr; /* Logo takes 2 parts, navigation takes 4 parts */
-    align-items: center; /* Align items vertically */
-    padding: 10px;
     background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .logo {
-    width: 200px; /* Ensures size */
-    display: block; /* Fixes inline behavior */
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
-    display: flex; /* Makes links align horizontally */
-    gap: 20px; /* Space between links */
-    justify-content: flex-end; /* Push links to the right */
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
 }
