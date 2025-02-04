@@ -155,23 +155,32 @@ footer nav img {
 .history-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 800px;
     margin: auto;
+    flex-wrap: wrap;  /* Allows wrapping for smaller screens */
 }
 
 .history-container img {
-    max-width: 60%;  
-    height: 100;
+    display: block;
+    width: 60%;  
+    height: auto;
     border-radius: 10px;
-    flex-shrink: 0;
+    margin: 20px 0;
 }
 
-.history-text {
-    flex: 2; 
-    text-align: justify;
-    margin-left: 20px; 
-    max-width: 55%;
+.history-container .history-text1,
+.history-container .history-text2 {
+    flex: 1;
+    padding: 10px;
+}
+
+.history-text1 {
+    text-align: left;
+}
+
+.history-text2 {
+    text-align: right;
 }
 
 head.title {
