@@ -187,39 +187,37 @@ footer nav img {
 
 .history-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     max-width: 800px;
     margin: auto;
     padding: 20px;
 }
 
-.history-container .image-wrapper {
-    flex: 0 0 40%;
-    display: flex;
-    justify-content: center;
-    padding-right: 20px;
-}
-
-.history-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 .history-container .history-text1,
 .history-container .history-text2 {
-    flex: 1;
-    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
     text-align: justify;
+    flex: 1;
 }
 
-.history-text1 {
+.history-container .history-text1 {
     text-align: left;
 }
 
-.history-text2 {
+.history-container .history-text2 {
     text-align: right;
+}
+
+.history-container img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 0 0 auto;
 }
 
 head.title {
