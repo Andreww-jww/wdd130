@@ -92,7 +92,7 @@ header {
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Adds space between the links */
+    gap: 30px; 
 }
 
 nav ul {
@@ -117,21 +117,49 @@ nav a {
     gap: 15px; 
 }
 
-.gallery img {
-    width: 100%; 
-    max-width: 400px; 
-    height: auto;
+.gallery {
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.figure-container {
+    text-align: center;
+    width: 200px;
+}
+
+.figure-container img {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.figure-container figcaption {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: var(--accent1-color);
-    color: var(--background-color);
-    padding: 10px;
+    text-align: center; 
+    height: 100px;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    margin: 0 auto; 
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
 }
 
 footer nav {
@@ -144,6 +172,11 @@ footer nav img {
     height: 32px;
 }
 
+.copyright {
+    display: flex;
+    align-items: flex-end; 
+}
+
 .history {
     text-align: center; 
 }
@@ -154,25 +187,31 @@ footer nav img {
 
 .history-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     max-width: 800px;
     margin: auto;
-    flex-wrap: wrap;  /* Allows wrapping for smaller screens */
+    padding: 20px;
+}
+
+.history-container .image-wrapper {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 .history-container img {
-    display: block;
-    width: 60%;  
+    width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 20px 0;
 }
 
 .history-container .history-text1,
 .history-container .history-text2 {
     flex: 1;
     padding: 10px;
+    text-align: justify;
 }
 
 .history-text1 {
@@ -202,4 +241,20 @@ section.intro p {
 
 .adventures h2 {
     text-align: center;
+}
+
+.adventures .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.figure-container img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
