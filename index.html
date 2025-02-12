@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Willoughby | WDD 130</title>
-    <meta name="description" content="My home page shares a brief answer to that often scary question of who am I? Specifically Andrew.">
+    <title>White Water Rafting</title>
+    <meta name="description" content="Join us for an unforgettable white water rafting experience!">
     <meta name="author" content="Andrew Willoughby">
 </head>
 <body>
@@ -16,17 +16,42 @@
         </nav>
     </header>
     <main>
-        <h1>Andrew Willoughby | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hello, my name is Andrew Willoughby" width="200">
-        <p>Hi there! My name is Andrew Willoughby. I am from South Africa. I love sports and outdoor activities. The most recent passion I have found is going to the gym. I am excited to learn this semester!</p>
+        <section class="hero">
+            <img src="images/adventure.jpeg" alt="Rafting Adventure" class="hero-img">
+            <h1 class="hero-heading">Join Us for the Ultimate White Water Rafting Adventure!</h1>
+        </section>
+        <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+        <section class="cta">
+            <a href="trips.html" class="cta-btn">Check Out Our Rafting Trips!</a>
+        </section>
+        <section class="content-grid">
+            <div class="content-item">
+                <img src="images/team.jpeg" alt="Rafting on River" class="content-img">
+                <div class="content-text">
+                    <h2>Thrilling River Adventures</h2>
+                    <p>Experience the rush of navigating challenging rapids with our expert guides. Perfect for adventure seekers!</p>
+                </div>
+            </div>
+            <div class="content-item">
+                <img src="images/rafting team.jpeg" alt="Rafting Team" class="content-img">
+                <div class="content-text">
+                    <h2>Group and Family Fun</h2>
+                    <p>Whether you're with friends or family, our rafting trips offer fun and bonding in a safe, exciting environment.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <aside>
-        <h2>South Africa</h2>
-        <img src="images/south_africa.jpeg" alt="Picture of Table Mountain" width="200">
-        <p>South Africa is known for its beauty and diversity. I have chosen one of the 7 Wonders of the World: Table Mountain.</p>
-    </aside>
     <footer>
-        <p>© 2025 Andrew Willoughby | South Africa</p>
+        <p>© 2025 White Water Rafting | Your Adventure Awaits</p>
     </footer>
 </body>
 </html>
